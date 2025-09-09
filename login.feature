@@ -9,13 +9,13 @@
             Dado que acesso a página da EBAC Shop
 
             Cenário: Ao inserir dados válidos deve ser direcionado para a tela de checkout
-            Quando eu faço login autenticado na "plataforma"
-            E insiro o usuário e senha "válido"
+            Quando eu inserir os dados validos do "usuário"
+            E clicar no botão de "login"
             Então sou direcionado para a tela de "checkout"
 
             Cenário: Ao inserir um dos campos inválidos deve exibir uma mensagem de alerta Usuário ou senha inválidos
             Quando eu iserir o usuário ou senha "inválido"
-            E clico no botão de login
+            E clicar para "confirmar"
             Então deve exibir uma mensagem de alerta "Usuário ou senha inválidos"
 
             Esquema do Cenário: Tela de login
@@ -24,6 +24,6 @@
             Então sou direcionado para a tela de checkout finalizar <pedidos>
 
             Exemplos:
-            | checkout  | valido   | pedidos    |
-            | finalizar | valido   | finalizado |
-            | finalizar | inválido | inválido   |
+            | usuario  | checkout   | pedidos    |
+            | valido   | finalizar  | confirmar  |
+            | inválido | cancelar   | retornar   |
