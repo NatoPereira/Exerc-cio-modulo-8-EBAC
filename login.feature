@@ -24,6 +24,6 @@
             Então sou direcionado para a tela de checkout finalizar <pedidos>
 
             Exemplos:
-            | usuario  | pedidos   | checkout |
-            | valido   | finalizar | confirmar|
-            | inválido | finalizar | confirmar|
+            | usuario  | pedidos   | checkout  |
+            | valido   | confirmar | finalizar |
+            | inválido | confirmar | finalizar |
