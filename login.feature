@@ -1,29 +1,28 @@
-            #language: pt
-
-            Funcionalidade: Login na plataforma
+            # language: pt
+            Funcionalidade: Login na EBAC Shop
             Como cliente da EBAC Shop
-            Quero fazer o login autenticação na plataforma
+            Quero fazer o login (autenticação) na plataforma
             Para visualizar meus pedidos
 
             Contexto:
-            Dado que acesso a página da EBAC Shop
+            Dado que o cliente está na página de login da EBAC Shop
 
             Cenário: Ao inserir dados válidos deve ser direcionado para a tela de checkout
-            Quando eu inserir os dados validos do "usuário"
-            E clicar no botão de "login"
-            Então sou direcionado para a tela de "checkout"
+            Quando o cliente digitar o usuário e senha "valido"
+            E clicar em  "confirmar"
+            Então deve ser direcionado para tela "checkout"
 
-            Cenário: Ao inserir um dos campos inválidos deve exibir uma mensagem de alerta Usuário ou senha inválidos
-            Quando eu iserir o usuário ou senha "inválido"
-            E clicar para "confirmar"
-            Então deve exibir uma mensagem de alerta "Usuário ou senha inválidos"
+            Cenário: Ao inserir um dos campos inválidos deve ser exibida a mensagem de alerta "usuário ou senha inválidos"
+            Quando o cliente digitar o usuário ou senha "invalido"
+            E clicar em  "confirmar"
+            Então deve ser exibida a mensagem de alerta "Usuário ou senha inválidos"
 
             Esquema do Cenário: Tela de login
-            Quando eu inserir os dados validos deve ser direcionado para a tela de <checkout>
-            E insiro o usuário e senha <valido>
-            Então sou direcionado para a tela de checkout finalizar <pedidos>
+            Quando eu inserir os dados validos deve ser direcionado para a tela de "<pedido>"
+            E insiro o usuário e senha "<valido>"
+            Então sou direcionado para a tela de checkot finalizar "<pedido>"
 
             Exemplos:
-            | usuario  | pedidos   | checkout  |
+            | usuario  | pedido    | checkot   |
             | valido   | confirmar | finalizar |
-            | inválido | confirmar | finalizar |
+            | invalido | confirmar | finalizar |
