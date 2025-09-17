@@ -19,7 +19,7 @@
             E deve exibir uma mensagem de alerta "O número máximo de produtos por venda é permitido"
             Então os produtos devem ser adicionados ao "carrinho"
 
-            Cenário: Quando eu clicar no botão limpar
+            Cenário: Quando eu clicar no botão limpar deve voltar ao estado original
             Quando eu confirmar a ação de "limpar"
             Então deve voltar ao estado "original"
             E o botão adicionar ao carrinho deve estar "abilitado"
